@@ -64,11 +64,53 @@ Since this starter does not include navigation by default, you can choose to add
    npm install expo-router
    ```
 2. **Configure navigation**:
-   - **Create a `screens` directory**: 
-     Inside your project root, create a directory named `screens`.
-   - **Place components (screens) within the `screens` directory**: 
-     Add your screen components (e.g., `HomeScreen.js`, `ProfileScreen.js`) inside this directory.
-   - **Set up Expo Router in `App.js`** according to the [official documentation](https://docs.expo.dev/versions/latest/sdk/screens/).
+   - **Update `package.json`**: Modify the `main` field to use Expo Router’s entry point:
+
+     ```json
+     {
+       "name": "first-react-native",
+       "version": "1.0.0",
+       "main": "expo-router/entry"
+     }
+     ```
+
+   - **Create an `app` directory**: Inside your project root, create a directory named `app`.
+
+   - **Create `index` and `_layout` files**: Inside the `app` directory, create `index.js` and `_layout.js` files.
+
+     **`app/_layout.js`**:
+
+     ```jsx
+     import React from "react";
+     import { Stack } from "expo-router";
+
+     export default function RootLayout() {
+       return (
+         <Stack>
+           <Stack.Screen name="index" options={{ headerShown: false }} />
+         </Stack>
+       );
+     }
+     ```
+
+     **`app/index.js`**:
+
+     ```jsx
+     import React from "react";
+     import { View, Text } from "react-native";
+     import { StatusBar } from "expo-status-bar";
+
+     export default function Index() {
+       return (
+         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+           <Text>Hello World</Text>
+           <StatusBar style="auto" />
+         </View>
+       );
+     }
+     ```
+
+With this setup, you can utilize folder-based routing with Expo Router, similar to Next.js.
 
 #### Option 2: Using React Native Navigation
 
