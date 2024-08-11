@@ -41,7 +41,7 @@ This template includes Tailwind CSS configured with NativeWind. You can start wr
 import React from "react";
 import { View, Text, StatusBar } from "react-native";
 
-export default function HomeScreen() {
+export default function App() {
   return (
     <View className="flex-1 justify-center items-center">
       <Text className="text-3xl text-center text-blue-600">
