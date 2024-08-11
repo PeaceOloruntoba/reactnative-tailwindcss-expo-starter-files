@@ -100,15 +100,17 @@ Since this starter does not include navigation by default, you can choose to add
      import { View, Text } from "react-native";
      import { StatusBar } from "expo-status-bar";
 
-     export default function Index() {
+     export default function index() {
        return (
-         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-           <Text>Hello World</Text>
+         <View style="flex-1 justify-center items-center bg-white">
+           <Text style="text-xl font-bold text-black">Hello World</Text>
            <StatusBar style="auto" />
          </View>
        );
      }
      ```
+
+With this setup, your app will use Tailwind CSS for styling, ensuring that "Hello World" is centered on the screen.
 
 With this setup, you can utilize folder-based routing with Expo Router, similar to Next.js.
 
