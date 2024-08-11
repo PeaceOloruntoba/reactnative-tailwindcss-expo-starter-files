@@ -110,9 +110,7 @@ Since this starter does not include navigation by default, you can choose to add
      }
      ```
 
-With this setup, your app will use Tailwind CSS for styling, ensuring that "Hello World" is centered on the screen.
-
-With this setup, you can utilize folder-based routing with Expo Router, similar to Next.js.
+   With this setup, you can utilize folder-based routing with Expo Router, similar to Next.js.
 
 #### Option 2: Using React Native Navigation
 
