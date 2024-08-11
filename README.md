@@ -21,18 +21,22 @@ Make sure you have the following installed:
 ### Installation
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/PeaceOloruntoba/reactnative-tailwindcss-expo-starter-files.git
    cd reactnative-tailwindcss-expo-starter-files
    ```
 2. **Install Dependencies**:
-   ```bash
+
+    ```bash
    npm install
    ```
 3. **Start the development server**:
+
    ```bash
    npm run start
    ```
+   
 ## Using the Template
 
 This template includes Tailwind CSS configured with NativeWind. You can start writing styles using Tailwind classes directly in your React Native components. For example:
