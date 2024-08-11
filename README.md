@@ -30,7 +30,7 @@ Make sure you have the following installed:
    npm install
    ```
 3. **Start the development server**:
-4. ```bash
+   ```bash
    npm run start
    ```
 ## Using the Template
